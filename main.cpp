@@ -7,32 +7,32 @@
 using nomespace std;
 
 int main() {
-    Zoo* zoo("Zoo de la Montagne");
+    Zoo* zoo("Zoo de la Montagne");//creer un zoo
 
-    zoo->addAnimal(new Tigre("T1"));
-    zoo->addAnimal(new Tigre("T2"));
-    zoo->addAnimal(new Tigre("T3"));
-    Poule* p1 = new Poule("P1");
-    zoo->addAnimal(P1);
-    zoo->addAnimal(new Poule("P2"));
-    zoo->addAnimal(new Poule("P3"));
-    zoo->addAnimal(new Poule("P4"));
-    zoo->addAnimal(new Aigle("A1"));
-    zoo->addAnimal(new Aigle("A2"));
-    zoo->addAnimal(new Aigle("A3"));
+    zoo->addAnimal(new Tigre("Jean Michel", 'M', 0));//creer des annimaux
+    zoo->addAnimal(new Tigre("Marine", 'F', 0));
+    zoo->addAnimal(new Tigre("Lisa", 'F', 0));
 
+    zoo->addAnimal(new Poule("Elisa", 0));
+    zoo->addAnimal(new Poule("Sarah",0));
+    zoo->addAnimal(new Poule("Romane", 0));
 
-    zoo->fire();
-    p1->Dead();
-    zoo->fire();
+    zoo->addAnimal(new Aigle("Ricou", 'M', 0));
+    zoo->addAnimal(new Aigle("Joe", 'M', 0));
+    zoo->addAnimal(new Aigle("Kate", 'F', 0));
 
-    Zoo::getInstance()->fire();
+    zoo->addAnimal(new Coq("Jonathan", 0))
+
+    zoo->addHome(home);//creer des habitats
+    zoo->addHome(home2);
+    zoo->addHome(home3);
+
+    Home* home = new Home("La maison des tigres");//mettre les annimaux dans les habitats
+    home->addAnimal(Jean Michel, Marine, Lisa);
+    Home* home2 = new Home("La maison des aigles");
+    home->addAnimal(Ricou, Joe, Kate);
+    Home *home3 = new Home("La maison du poulet");
+    home->addAnimal(Elisa, Sarah, Romane, Jonathan);
 
     return 0;
-
-    //créer le zoo
-    //créer les animaux
-    //mettre les animaux dans le zoo zoo.add(P1)
-    //le feu dans le zoo zoo.fire()
-
 }
