@@ -9,6 +9,10 @@ class Aigles : public IAnimal
 {
 public:
     Aigles(string name, char sexe, int age, float alimentsParJ);
+
+    bool isMature() const;
+
+    bool isReproductible() const;
 private:
     float m_alimentsParJ; // en kg
     int m_jrsAvantFaim{10}; //10 jours
