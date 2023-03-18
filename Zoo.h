@@ -18,7 +18,6 @@ class Zoo
         }
         virtual ~Zoo();
         void addAnimal(IAnimal*animal);
-        void fire();
         static Zoo* getInstance(){
             return m_instance;
         }

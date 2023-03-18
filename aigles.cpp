@@ -1,11 +1,9 @@
 #include "aigles.h"
 
-Aigles::Aigles()
+Aigles::Aigles(string name, char sexe, int age, float alimentsParJ) :
+    IAnimal(name, sexe, age), m_alimentsParJ(alimentsParJ),
+    m_jrsAvantFaim(10), m_maturiteSexuelle(365 * 4),
+    m_finDeReprod(365 * 14), m_esperanceDeVie(365 * 25)
 {
-
-}
-
-void Aigles::onFire()
-{
-    cout<<"je m'enfuie"<<endl;
+    // Corps de la classe
 }

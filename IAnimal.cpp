@@ -1,13 +1,7 @@
 #include "IAnimal.h"
 
-IAnimal::~IAnimal()
+IIAnimal::IAnimal(string name, char sexe, int age) :
+    m_name(name), m_sexe(sexe), m_age(age)
 {
-    //dtor
-}
-void IAnimal::fire()
-{
-    if(!m_is_dead)
-        {
-            onFire();
-        }
+    // Corps de la classe
 }
