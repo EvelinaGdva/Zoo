@@ -7,3 +7,13 @@ Aigles::Aigles(string name, char sexe, int age, float alimentsParJ) :
 {
     // Corps de la classe
 }
+
+bool Aigles::isMature() const
+{
+    return age_ >= maturiteSexuelle_;
+}
+
+bool Aigles::isReproductible() const
+{
+    return age_ < finReproduction_ && age_ >= maturiteSexuelle_;
+}
