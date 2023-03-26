@@ -7,23 +7,22 @@ include_directories(.)
 include_directories(Aliments)
 
 add_executable(Zoo
-        Aliments/Aliment.cpp
-        Aliments/Aliment.h
+        Aliments/aliment.cpp
+        Aliments/aliment.h
         Aliments/Graines.cpp
         Aliments/Graines.h
         Aliments/Viande.cpp
         Aliments/Viande.h
-        aigles.cpp
-        aigles.h
-        "coq(1).cpp"
-        coq.cpp
-        coq.h
+        Aigles.cpp
+        Aigles.h
+        Coq.cpp
+        Coq.h
         IAnimal.cpp
         IAnimal.h
         main.cpp
-        poules.cpp
-        poules.h
-        tigres.cpp
-        tigres.h
+        Poules.cpp
+        Poules.h
+        Tigres.cpp
+        Tigres.h
         Zoo.cpp
         Zoo.h)

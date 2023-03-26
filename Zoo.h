@@ -1,27 +1,37 @@
-#ifndef IANIMAL_H
-#define IANIMAL_H
-#include<vector>
-#include<string>
+#ifndef ZOO_H
+#define ZOO_H
+
+#include <vector>
+#include <string>
+#include "IAnimal.h"
 
 using namespace std;
 
-class Zoo
-{
+class Zoo {
+public:
+    Zoo(const string& name);
+    virtual ~Zoo();
+
+    void addAnimal(IAnimal* animal);
+    static Zoo *getInstance();
+    void show() const;
+    string getName() const;
+    int getNbAnimals() const;
+    string getSexe() const;
+
+private:
     string m_name;
-    vector<IAnimal> listAnimals;
-    static Zoo* m_instance = nullptr;
-    public;
-        Zoo(string m_name):m_name(name){
-            if (m_instance = nullptr) {
-                m_instance = this;
-            }
-        }
-        virtual ~Zoo();
-        void addAnimal(IAnimal*animal);
-        static Zoo* getInstance(){
-            return m_instance;
-        }
+    vector<IAnimal*> m_listAnimals;
+    //static Zoo* m_instance;
+    //const int MAX_ANIMALS{15}; // nombre maximum d'animaux dans le zoo
+};
+
+class Home {
+public:
+    Home(const string& name);
+    virtual ~Home();
+
 
 };
 
-#endif // IANIMAL_H
+#endif // ZOO_H

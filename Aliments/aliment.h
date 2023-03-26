@@ -1,4 +1,4 @@
-#infdef ALIMENT_H
+#ifndef ALIMENT_H
 #define ALIMENT_H
 #include <string>
 
@@ -17,8 +17,6 @@ public:
     string getNom();
     float getPrixKg();
     float getQuantite();
-
-
 };
 
 #endif  //ALIMENT_H

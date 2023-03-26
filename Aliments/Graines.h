@@ -1,7 +1,9 @@
 #ifndef GRAINES_H
 #define GRAINES_H
+#include <string>
+#include "aliment.h"
 
-#include "Aliment.h"
+using namespace std;
 
 class Graines: public Aliment{
 public:

@@ -1,26 +1,26 @@
-#include "aigles.h"
+#include "Aigles.h"
 #include "IAnimal.h"
-#include "poules.h"
-#include "tigres.h"
-#include "coq.h"
+#include "Poules.h"
+#include "Tigres.h"
+#include "Coq.h"
 #include "Zoo.h"
 
 using namespace std;
 
 int main() {
-    Zoo* zoo = ("Zoo de dingue");//creer un zoo
+    Zoo* zoo = (Zoo *) ("Zoo de dingue"); //creation zoo
 
-    zoo->addAnimal(new Tigre("Jean Michel", 'M', 0));//creer des annimaux
-    zoo->addAnimal(new Tigre("Marine", 'F', 0));
-    zoo->addAnimal(new Tigre("Lisa", 'F', 0));
+    zoo->addAnimal(new Tigres("Jean Michel", 'M', 0));//creer des annimaux
+    zoo->addAnimal(new Tigres("Marine", 'F', 0));
+    zoo->addAnimal(new Tigres("Lisa", 'F', 0));
 
-    zoo->addAnimal(new Poule("Elisa", 0));
-    zoo->addAnimal(new Poule("Sarah",0));
-    zoo->addAnimal(new Poule("Romane", 0));
+    zoo->addAnimal(new Poules("Elisa", 0));
+    zoo->addAnimal(new Poules("Sarah",0));
+    zoo->addAnimal(new Poules("Romane", 0));
 
-    zoo->addAnimal(new Aigle("Ricou", 'M', 0));
-    zoo->addAnimal(new Aigle("Joe", 'M', 0));
-    zoo->addAnimal(new Aigle("Kate", 'F', 0));
+    zoo->addAnimal(new Aigles("Ricou", 'M', 0));
+    zoo->addAnimal(new Aigles("Joe", 'M', 0));
+    zoo->addAnimal(new Aigles("Kate", 'F', 0));
 
     zoo->addAnimal(new Coq("Jonathan", 0));
 

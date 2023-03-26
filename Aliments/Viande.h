@@ -1,7 +1,9 @@
 #ifndef VIANDE_H
 #define VIANDE_H
+#include <string>
+#include "aliment.h"
 
-#include "Aliment.h"
+using namespace std;
 
 class Viande: public Aliment{
 public:
