@@ -1,8 +1,8 @@
 #include "IAnimal.h"
 #include "Coq.h"
 
-Coq::Coq(string name, int age)
-    :IAnimal(name, age),
+Coq::Coq(string name,char sexe, int age)
+    :IAnimal(name, sexe, age),
         m_alimentsParJ(0.18),
         m_jrsAvantFaim(2),
         m_maturiteSexuelle(30*6),

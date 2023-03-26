@@ -8,7 +8,7 @@ using namespace std;
 class Poules : public IAnimal
 {
 public:
-    Poules(string name, int age);
+    Poules(string name, char sexe, int age);
 
     bool isReproductible(int age) const;
 private:

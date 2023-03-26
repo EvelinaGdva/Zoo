@@ -9,10 +9,10 @@ using namespace std;
 class Coq : public IAnimal
 {
 public:
-    Coq(string name, int age);
+    Coq(string name,char sexe, int age);
 
-    bool isReproductible(int age) const;
 private:
+    bool isReproductible(int age) const;
     int m_maturiteSexuelle{30 * 6}; //6 mois
     int m_finDeReprod{365 * 8}; // 8ans
     float m_alimentsParJ{0.18}; // en kg

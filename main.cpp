@@ -10,17 +10,26 @@ using namespace std;
 int main() {
     Zoo* zoo = (Zoo *) ("Zoo de dingue"); //creation zoo
 
-    zoo->addAnimal(new Tigres("Jean Michel", 'M', 0));//creer des annimaux
+    zoo->addAnimal(new Tigres("Jean michel", "M", 0));//creer des animaux
     zoo->addAnimal(new Tigres("Marine", 'F', 0));
     zoo->addAnimal(new Tigres("Lisa", 'F', 0));
+    zoo->addAnimal(new Tigres("Marco", "H", 0))
 
     zoo->addAnimal(new Poules("Elisa", 0));
     zoo->addAnimal(new Poules("Sarah",0));
     zoo->addAnimal(new Poules("Romane", 0));
+    zoo->addAnimal(new Poules("June", 0));
+    zoo->addAnimal(new Poules("Sophie",0));
+    zoo->addAnimal(new Poules("Jenn", 0));
+    zoo->addAnimal(new Poules("Jasinthe", 0));
+    zoo->addAnimal(new Poules("Rose",0));
+    zoo->addAnimal(new Poules("Myreille", 0));
+    zoo->addAnimal(new Poules("Sandrine", 0));
 
     zoo->addAnimal(new Aigles("Ricou", 'M', 0));
     zoo->addAnimal(new Aigles("Joe", 'M', 0));
     zoo->addAnimal(new Aigles("Kate", 'F', 0));
+    zoo->addAnimal(new Aigles("Love", 'F', 0));
 
     zoo->addAnimal(new Coq("Jonathan", 0));
 

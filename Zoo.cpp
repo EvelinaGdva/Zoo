@@ -1,40 +1,35 @@
 #include "Zoo.h"
 #include <cstdio>
 
+Zoo* Zoo::m_instance = nullptr;
+//const int Zoo::MAX_ANIMALS{15};
 
-//Zoo::Zoo(const string& name) : m_name(name) {
-  //  if (m_instance == nullptr) {
-    //    m_instance = this;
-
-Zoo::Zoo(const string &name) {}
-
-Zoo::~Zoo() {
-    //dstor
+Zoo::Zoo(const string& name) : m_name(name) {
+    if (m_instance == nullptr) {
+        m_instance = this;
+    }
 }
 
-void Zoo::addAnimal(IAnimal* animal) {
-    //if (m_listAnimals.size() < MAX_ANIMALS) {
-        m_listAnimals.push_back(animal);
-    } //else {
-        ////     animal->getName().c_str(),
-            //   m_name.c_str(),
-              // MAX_ANIMALS);
+void Zoo::addAnimal(IAnimal *animal) {
 
+}
+
+Zoo::~Zoo() {
+    for (auto& animal : m_listAnimals) {
+        delete animal;
+    }
+    m_listAnimals.clear();
+}
 
 void Zoo::show() const {
-    printf("----- Zoo %s -----\n"
-           "=> Liste des Animaux (%d sur %d):\n",
-           m_name.c_str(),
-           m_listAnimals.size();
-
-
+    printf("----- Zoo %s -----\n", m_name.c_str());
+    printf("=> Liste des Animaux (%d sur %d):\n", m_listAnimals.size(), MAX_ANIMALS);
     for (const auto& animal : m_listAnimals) {
         printf("- %s de sexe %c, %d ans\n",
                animal->getName().c_str(),
                animal->getSexe(),
                animal->getAge());
     }
-
     printf("---------------------------\n");
 }
 
@@ -46,6 +41,4 @@ int Zoo::getNbAnimals() const {
     return m_listAnimals.size();
 }
 
-Home::Home(const string& name) {
-
-}
+Home::Home(const string& name) : m_name(name) {}

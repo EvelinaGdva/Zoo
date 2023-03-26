@@ -11,9 +11,9 @@ class Zoo {
 public:
     Zoo(const string& name);
     virtual ~Zoo();
-
     void addAnimal(IAnimal* animal);
-    static Zoo *getInstance();
+    static IAnimal *getInstance();
+
     void show() const;
     string getName() const;
     int getNbAnimals() const;
@@ -22,13 +22,14 @@ public:
 private:
     string m_name;
     vector<IAnimal*> m_listAnimals;
-    //static Zoo* m_instance;
-    //const int MAX_ANIMALS{15}; // nombre maximum d'animaux dans le zoo
+    static Zoo* m_instance;
+    const int MAX_ANIMALS{15}; // nombre maximum d'animaux dans le zoo
 };
 
 class Home {
 public:
     Home(const string& name);
+    string m_name;
     virtual ~Home();
 
 

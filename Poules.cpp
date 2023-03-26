@@ -1,8 +1,8 @@
 #include "IAnimal.h"
 #include "Poules.h"
 
-Poules::Poules(string name, int age)
-    :IAnimal(name, age),
+Poules::Poules(string name, char sexe, int age)
+    :IAnimal(name, sexe, age),
         m_alimentsParJ(),
         m_jrsAvantFaim(10),
         m_maturiteSexuelle(365 * 4),

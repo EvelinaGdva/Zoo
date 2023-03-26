@@ -8,7 +8,6 @@ using namespace std;
 class IAnimal
 {
 public:
-    IAnimal(string name, int age);
     IAnimal(string name, char sexe, int age);
     virtual ~IAnimal() = default;
 
