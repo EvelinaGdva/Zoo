@@ -1,8 +1,8 @@
 #include "Tigres.h"
 #include "IAnimal.h"
 
-Tigres::Tigres(string name, char sexe, int age):
-    IAnimal(name, sexe, age)
+Tigres::Tigres(string name, char sexe, int age)
+    :IAnimal(name, sexe, age)
 {
 
 };

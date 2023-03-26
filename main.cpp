@@ -10,13 +10,13 @@ using namespace std;
 int main() {
     Zoo* zoo = (Zoo *) ("Zoo de dingue"); //creation zoo
 
-    zoo->addAnimal(new Tigres("Jean michel", "M", 0));//creer des animaux
+    zoo->addAnimal(new Tigres("Jean michel" ,"M", 0));//creer des animaux
     zoo->addAnimal(new Tigres("Marine", 'F', 0));
     zoo->addAnimal(new Tigres("Lisa", 'F', 0));
     zoo->addAnimal(new Tigres("Marco", "H", 0))
 
-    zoo->addAnimal(new Poules("Elisa", 0));
-    zoo->addAnimal(new Poules("Sarah",0));
+    zoo->addAnimal(new Poules("Elisa","F", 0));
+    zoo->addAnimal(new Poules("Sarah","F",0));
     zoo->addAnimal(new Poules("Romane", 0));
     zoo->addAnimal(new Poules("June", 0));
     zoo->addAnimal(new Poules("Sophie",0));
@@ -49,9 +49,6 @@ int main() {
     home3->addAnimal(zoo->getAnimal("Romane"));
     home3->addAnimal(zoo->getAnimal("Jonathan"));
 
-    zoo->addHome(home);//mettre des habitats dans le zoo
-    zoo->addHome(home2);
-    zoo->addHome(home3);
 
     return 0;
 }

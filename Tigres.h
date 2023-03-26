@@ -2,6 +2,7 @@
 #define TIGRES_H
 
 #include "IAnimal.h"
+#include "Zoo.h"
 #include <string>
 
 using namespace std;
@@ -10,6 +11,7 @@ class Tigres : public IAnimal
 {
 public:
     Tigres(string name, char sexe, int age);
+    virtual void rugir();
 
 private:
     bool isReproductible(int age) const;

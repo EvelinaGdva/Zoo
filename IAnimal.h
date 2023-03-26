@@ -15,6 +15,7 @@ public:
     char getSexe() const { return m_sexe; }
     int getAge() const { return m_age; }
 
+    virtual void rugir();
 private:
     string m_name;
     char m_sexe;
